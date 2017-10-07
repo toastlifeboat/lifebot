@@ -26,6 +26,22 @@ module.exports = (robot) ->
   robot.hear /frolicking goats/i, (res) ->
     res.send res.random goats 
 
+  ponies = [ 
+    'https://i.pinimg.com/236x/bf/3d/df/bf3ddf9c1a49fe914540ceba210d4c97.jpg',
+    'https://www.visitscotland.com/blog/wp-content/uploads/2013/02/shetland-ponies-cardigans6.jpg', 
+    'https://i.amz.mshcdn.com/nXXA4s9V1iWnQBQJMyw54c8G9SM=/950x534/filters:quality(90)/https%3A%2F%2Fblueprint-api-production.s3.amazonaws.com%2Fuploads%2Fcard%2Fimage%2F389602%2F9cb3c9da-95a1-4690-9f1e-6845db03279e.jpg', 
+    'https://i.pinimg.com/236x/bf/3d/df/bf3ddf9c1a49fe914540ceba210d4c97.jpg' ]
 
+  robot.hear /ponies in sweaters/i, (res) ->
+    res.send res.random ponies
+
+  manatees = [ 
+    'http://calmingmanatee.com/img/xmanatee21.jpg.pagespeed.ic.XSj96sryjW.webp',
+    'http://calmingmanatee.com/img/xmanatee7.jpg.pagespeed.ic.ixr9pIvkts.webp',
+    'http://calmingmanatee.com/img/xmanatee9.jpg.pagespeed.ic.Ae_Vfb0v5V.webp'
+  ]
+
+  robot.hear /calming manatee/i, (res) ->
+    res.send res.random manatees
 
   
