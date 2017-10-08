@@ -45,3 +45,5 @@ module.exports = (robot) ->
     res.send res.random manatees
 
   
+  robot.hear /([^:]|\A)alot/i, (res) ->
+    res.send ':alot:'
