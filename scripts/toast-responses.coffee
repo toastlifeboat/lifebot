@@ -50,3 +50,6 @@ module.exports = (robot) ->
 
   robot.hear /I love this bar and everyone in it/i, (res) ->
     res.send ':heart: :orange_heart: :yellow_heart: :green_heart: :blue_heart: :purple_heart:'
+    
+  robot.hear /quid censes/i, (res) ->
+    res.send 'Carthago delenda est!'
