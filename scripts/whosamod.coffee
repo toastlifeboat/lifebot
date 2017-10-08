@@ -1,12 +1,9 @@
 # Description:
-#   Example scripts for you to examine and try out.
+#   Lets mods "clock in/out" and makes it easy for everyon to see who is on duty
 #
 # Notes:
-#   They are commented out by default, because most of them are pretty silly and
-#   wouldn't be useful and amusing enough for day to day huboting.
-#   Uncomment the ones you want to try and experiment with.
-#
-#   These are from the scripting documentation: https://github.com/github/hubot/blob/master/docs/scripting.md
+#   mods can DM the bot with 'on duty' or 'off duty'
+#   the bot listens (either in a channel or DM) for the command 'whosamod'
 
 module.exports = (robot) ->
 
@@ -31,6 +28,6 @@ module.exports = (robot) ->
 
     mods = robot.brain.data.modsonduty
     if mods.length
-      res.reply "On duty mods are: #{mods.toString()}"
+      res.reply "On duty mods are: #{mods.join(', ')}"
     else
       res.reply "No mods on duty at the moment."

@@ -47,3 +47,6 @@ module.exports = (robot) ->
   
   robot.hear /([^:]|\A)alot/i, (res) ->
     res.send ':alot:'
+
+  robot.hear /I love this bar and everyone in it/i, (res) ->
+    res.send ':heart: :orange_heart: :yellow_heart: :green_heart: :blue_heart: :purple_heart:'
