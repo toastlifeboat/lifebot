@@ -82,5 +82,5 @@ Don't blink. Blink and you're dead. They are fast. Faster than you can believe. 
 Never eat pears. They're too squishy and they always make your chin wet. That one's quite important. Write it down."
     ]
 
-  robot.hear /reverse the polairty/i, (res) ->
+  robot.hear /reverse the polarity/i, (res) ->
     res.send res.random whoisms
