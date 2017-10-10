@@ -13,7 +13,14 @@
 
 module.exports = (robot) ->
 
-  stbrnrds = ['https://static7.depositphotos.com/1002772/733/i/950/depositphotos_7336885-stock-photo-st-bernard-dog.jpg','https://cdn3.volusion.com/xgyjj.dsnkf/v/vspfiles/photos/006-2.jpg?1484819742','http://saintbernardkeg.com/wp-content/uploads/2015/08/swiss-snow.jpg','http://saintbernardkeg.com/wp-content/uploads/2015/08/16752328459_4781b05d48_k.jpg','http://i.imgur.com/9tLQ5PS.jpg','http://www.houseofswitzerland.org/sites/default/files/styles/portrait/public/story/portrait/Gallia%20et%20son%20tonnelet%20%C2%A9%20Iris%20Kuerschner%2C%20www.powerpress.ch%202%20%28Large%29.jpg?itok=xyYCkZ3R','http://i.telegraph.co.uk/multimedia/archive/01828/stbernard620_1828831b.jpg', 'http://www.saintbernardkeg.com/images/dogs/leonberger%20with%20swiss%20cross%20barrel.jpg','http://saintbernardkeg.com/wp-content/uploads/2015/08/canada.jpg']
+  stbrnrds = ['https://static7.depositphotos.com/1002772/733/i/950/depositphotos_7336885-stock-photo-st-bernard-dog.jpg','https://cdn3.volusion.com/xgyjj.dsnkf/v/vspfiles/photos/006-2.jpg?1484819742','http://saintbernardkeg.com/wp-content/uploads/2015/08/swiss-snow.jpg','http://saintbernardkeg.com/wp-content/uploads/2015/08/16752328459_4781b05d48_k.jpg','http://i.imgur.com/9tLQ5PS.jpg','http://www.houseofswitzerland.org/sites/default/files/styles/portrait/public/story/portrait/Gallia%20et%20son%20tonnelet%20%C2%A9%20Iris%20Kuerschner%2C%20www.powerpress.ch%202%20%28Large%29.jpg?itok=xyYCkZ3R','http://i.telegraph.co.uk/multimedia/archive/01828/stbernard620_1828831b.jpg', 'http://www.saintbernardkeg.com/images/dogs/leonberger%20with%20swiss%20cross%20barrel.jpg','http://saintbernardkeg.com/wp-content/uploads/2015/08/canada.jpg',
+    'https://images-na.ssl-images-amazon.com/images/I/51TytopN7-L._SY355_.jpg',
+    'http://www.pilotguides.com/wordpress/wp-content/uploads/2013/10/Saint-Bernard10.jpg',
+    'http://i.telegraph.co.uk/multimedia/archive/01828/stbernard620_1828831b.jpg',
+    'http://saintbernardkeg.com/wp-content/uploads/2015/08/canada.jpg',
+    'http://saintbernardkeg.com/wp-content/uploads/2015/08/16752328459_4781b05d48_k.jpg',
+    'http://dogkeg.com/wp-content/uploads/2015/04/saint_bernard__dog_keg_barrel-1-640x480.jpg'
+  ]
 
   robot.hear /StBrnrd/i, (res) ->
      res.send res.random stbrnrds 
