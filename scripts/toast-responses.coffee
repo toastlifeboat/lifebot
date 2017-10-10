@@ -97,3 +97,15 @@ Everybody lives Rose. Just this once, everybody lives.",
     
   robot.hear /everything happens so much/i, (res) ->
     res.send 'https://i.imgur.com/pe4Y58G.jpg'
+    
+        
+  robot.hear /you done it/i, (res) ->
+    res.send 'http://i.imgur.com/DAAN8yB.jpg?fb'
+    
+  whynotboth = 'https://slack-imgs.com/?c=1&url=http%3A%2F%2Fmedia4.giphy.com%2Fmedia%2F3o85xIO33l7RlmLR4I%2Fgiphy.gif'
+  
+  robot.hear /why not both/i, (res) ->
+    res.send whynotboth
+  
+  robot.hear /porque no los dos/i, (res) ->
+    res.send whynotboth
