@@ -91,3 +91,9 @@ Everybody lives Rose. Just this once, everybody lives.",
 
   robot.hear /reverse the polarity/i, (res) ->
     res.send res.random whoisms
+    
+ robot.hear /we just don't know/i, (res) ->
+    res.send 'https://68.media.tumblr.com/e91df694c327a40c573d2a18341fc52c/tumblr_inline_on3ehuH0nb1qgs5mf_500.gif'
+    
+ robot.hear /everything happens so much/i, (res) ->
+    res.send 'https://i.imgur.com/pe4Y58G.jpg'
