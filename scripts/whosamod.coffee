@@ -24,10 +24,10 @@ module.exports = (robot) ->
     robot.brain.data.modsonduty.splice(index, 1)
     res.reply "Have a good one, #{name}."
 
-  robot.hear /whosamod/i, (res) ->
+  robot.hear /(whosamod|whosonduty|adminonduty|admin please)/i, (res) ->
 
     mods = robot.brain.data.modsonduty
     if mods.length
-      res.reply "On duty mods are: #{mods.join(', ')}"
+      res.reply "On duty admins are: #{mods.join(', ')}"
     else
-      res.reply "No mods on duty at the moment."
+      res.reply "No admins on duty at the moment."
