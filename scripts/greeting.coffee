@@ -13,8 +13,8 @@ module.exports = (robot) ->
 	    msg.send "Greetings, Toastie!"
 
   robot.respond /what join message/i, (msg) ->
-	    join_message = robot.brain.get('joinMessage')
-      msg.send join_message
+    join_message = robot.brain.get('joinMessage')
+    msg.send join_message
 
       
       
