@@ -12,6 +12,12 @@ module.exports = (robot) ->
   robot.respond /hi|hello|hey/i, (msg) ->
 	    msg.send "Greetings, Toastie!"
 
+  robot.respond /what join message/i, (msg) ->
+	    join_message = robot.brain.get('joinMessage')
+      msg.send join_message
+
+      
+      
   robot.hear /set join message "((.*\s*)+)"/i, (res) ->
     message = res.match[1]
     robot.brain.set 'joinMessage', message
