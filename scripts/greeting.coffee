@@ -2,37 +2,31 @@
 #  Toastbot says hello.
 #
 # Commands:
-#  toastbot (hi|hello|hey) - reply with a greeting
+#  hubot (hi|hello|hey) - reply with a greeting
+#  hubot get join message for <channel id>
+#  hubot set join message for <channel id> to "<message>"
 #
 # Author:
-#  @hungrier.robot
+#  @hungrier.robot and @kellbot
 
+JoinMessage  = require './models/join-message'
 
 module.exports = (robot) ->
+  robot.brain.data.joinMessages or= {}
+  JoinMessage.robot = robot
+
   robot.respond /hi|hello|hey/i, (msg) ->
-	    msg.send "Greetings, Toastie!"
+    msg.send "Greetings, Toastie!"
 
-  robot.hear /set join message "((.*\s*)+)"/i, (res) ->
-    message = res.match[1]
-    robot.brain.set 'joinMessage', message
+  robot.respond /set join message for ([A-Z0-9]*) to "((.*\s*)+)"/i, (res) ->
+    channel = res.match[1]
+    message = res.match[2]
+   
+    response = JoinMessage.set channel, message
+    res.send response
 
-    res.send "set join message for new users" 
-
-  robot.hear /set start channel (.*)/i, (res) ->
-    channel_id = res.match[1]
-    robot.brain.set 'startChannel', channel_id
-
-    res.send "set start channel to #{channel_id}" 
-
-  robot.enter (res) ->
-    join_message = robot.brain.get('joinMessage')
-    start_channel = robot.brain.get('startChannel')
-    
-    channel = res.message.room
-        
-    if channel == start_channel
-      if join_message?
-        user_id = res.message.user.id
-        robot.adapter.client.web.chat.postEphemeral(channel, join_message,  user_id, {as_user: true})
-
-
+  robot.respond /get join message for ([A-Z0-9]*)/i, (res) ->
+    channel = res.match[1]
+   
+    response = JoinMessage.get channel
+    res.send response
