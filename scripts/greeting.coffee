@@ -2,43 +2,44 @@
 #  Toastbot says hello.
 #
 # Commands:
-#  toastbot (hi|hello|hey) - reply with a greeting
+#  hubot (hi|hello|hey) - reply with a greeting
+#  hubot get join message for #<channel name> - get the join message for a channel
+#  hubot set join message for #<channel name> to "<message>" - like it says on the tin
 #
 # Author:
-#  @hungrier.robot
+#  @hungrier.robot and @kellbot
 
+JoinMessage  = require './models/join-message'
 
 module.exports = (robot) ->
+
+  robot.brain.data.joinMessages or= {}
+  JoinMessage.robot = robot
+
   robot.respond /hi|hello|hey/i, (msg) ->
-	    msg.send "Greetings, Toastie!"
+    msg.send "Greetings, Toastie!"
 
-  robot.respond /what join message/i, (msg) ->
-    join_message = robot.brain.get('joinMessage')
-    msg.send join_message
+  robot.respond /set join message for #([A-Z0-9-_]*) to "((.*\s*)+)"/i, (res) ->
+    channel_name = res.match[1]
+    channel = robot.adapter.client.rtm.dataStore.getChannelByName(channel_name).id   
+    message = res.match[2]
+   
+    response = JoinMessage.set channel, message
+    res.send response
 
-      
-      
-  robot.hear /set join message "((.*\s*)+)"/i, (res) ->
-    message = res.match[1]
-    robot.brain.set 'joinMessage', message
+  robot.respond /get join message for #([a-zA-Z0-9-_]*)/i, (res) ->
+    channel_name = res.match[1]
+    channel = robot.adapter.client.rtm.dataStore.getChannelByName(channel_name).id   
 
-    res.send "set join message for new users" 
-
-  robot.hear /set start channel (.*)/i, (res) ->
-    channel_id = res.match[1]
-    robot.brain.set 'startChannel', channel_id
-
-    res.send "set start channel to #{channel_id}" 
-
+    response = JoinMessage.get channel
+    if response 
+      res.send response
+    else
+      res.send "No channel message found for \##{channel_name}"
+ 
   robot.enter (res) ->
-    join_message = robot.brain.get('joinMessage')
-    start_channel = robot.brain.get('startChannel')
-    
     channel = res.message.room
-        
-    if channel == start_channel
-      if join_message?
-        user_id = res.message.user.id
-        robot.adapter.client.web.chat.postEphemeral(channel, join_message,  user_id, {as_user: true})
-
-
+    if JoinMessage.exists(channel)
+      user_id = res.message.user.id
+      message = JoinMessage.get(channel)
+      robot.adapter.client.web.chat.postEphemeral(channel, message, user_id, {as_user: true})
