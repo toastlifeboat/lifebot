@@ -96,12 +96,8 @@ Everybody lives Rose. Just this once, everybody lives.",
     res.send 'https://68.media.tumblr.com/e91df694c327a40c573d2a18341fc52c/tumblr_inline_on3ehuH0nb1qgs5mf_500.gif'
     
   robot.hear /everything happens so much/i, (res) ->
-    res.send 'https://i.imgur.com/pe4Y58G.jpg'
-    
-        
-  robot.hear /you done it/i, (res) ->
-    res.send 'http://i.imgur.com/DAAN8yB.jpg?fb'
-    
+    res.send 'https://i.imgur.com/pe4Y58G.jpg'     
+     
   whynotboth = 'https://slack-imgs.com/?c=1&url=http%3A%2F%2Fmedia4.giphy.com%2Fmedia%2F3o85xIO33l7RlmLR4I%2Fgiphy.gif'
   
   robot.hear /why not both/i, (res) ->
