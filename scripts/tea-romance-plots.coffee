@@ -43,7 +43,10 @@ module.exports = (robot) ->
       'A warrior princess from another dimension',
       'Bond, Jamie Bond (one of 007\'s many abandoned offspring)',
       'A gossip columnist for the hottest scandal sheet in town',
-      'A woman disguised as her seafaring brother'
+      'A woman disguised as her seafaring brother',
+      'A werewolf with a penchant for geocaching',
+      'The Star of the aerial acrobatics show',
+      'A con artist with a heart of some metal that is definitely not gold'
 
     ]
 
@@ -60,6 +63,7 @@ module.exports = (robot) ->
       'the host of one of the internet\'s most popular podcasts',
       'a chess genius on the verge of winning the global championship',
       'Bhloodghrim Whrathfahng IV, son of Bhloodghrim Whrathfahng III',
+      'a cosplay costume designer',
       'a velociraptor shifter escaped from a government facility',
       'a chemist developing a love potion',
       'an undercover mushroom enforcement agent',
@@ -84,11 +88,14 @@ module.exports = (robot) ->
       'a theater makeup artist',
       'an international jewel thief in disguise as a Belgian nun',
       'a kindhearted country veterinarian',
+      'hipster barista who\'s allergic to coffee',
+      'violet eyed raven haired aristocratic alien',
       'a pirate who sets their beard on fire to intimidate their foes'
     ]
 
     romanceScenario = [
       'bump into each other',
+      'must come to terms with new shifter abilities',
       'catch one another\'s eyes across a crowded room',
       'end up in bed together for what seems like a one-night stand',
       'find themselves solving a mystery together',
@@ -143,7 +150,11 @@ module.exports = (robot) ->
       'team up to write and illustrate a graphic novel',
       'are partnered in a three-legged race',
       'are each other\'s sworn enemies',
-      'are trapped in a miles-long check-out queue'
+      'debunk a widely held myth',
+      'butt heads while investigating a murder in a small town',
+      'are being interrogated for crimes they didn’t commit', 
+      'are trapped in a miles-long check-out queue',
+      'Are charged with guarding a hidden city of dragons'
     ]
 
     romanceSetting = [
@@ -194,7 +205,12 @@ module.exports = (robot) ->
       'on 6th Street in Austin, Texas,', 
       'in the bleachers at their children\'s Little League game',
       'in a cyberpunk dystopia',
-      'at a 24-hour diner in Topeka'
+      'in a postapocalyptic department store',
+      'at a foreign embassy',
+      'at a 24-hour diner in Topeka',
+      'while on a kayaking adventure trip',
+      'in a complex cave system',
+      'while juggling the needs of their many demanding aunts'
     ]
 
     whatFollows = [
@@ -228,6 +244,7 @@ module.exports = (robot) ->
       'Things get hot and heavy ... maybe a little TOO hot and heavy',
       'They gathered together in front of a congregation. Will anyone object to their union?',
       'And then they take their pants off',
+      'Will they? They won’t, but what they do instead is delightful....',
       'Will they finally let their guard down and learn to live...with passion?'
     ]
 
