@@ -16,12 +16,15 @@
 module.exports = (robot) ->
 	robot.respond /CATFACT$/i, (msg) ->
 		msg.http('http://cat-fact.herokuapp.com/facts/random?amount=1')
-            .get() (error, response, body) ->
+            .get() (err, response, body) ->
                 # passes back the complete reponse
                 response = JSON.parse(body)
-                if response.success == "true"
-                  msg.send response.text
+                if err
+                  msg.send "Unable to get cat facts right now: #{err}"
+                  return
                 else
-#                  msg.send "Unable to get cat facts right now."
-                  msg.send error
+                  msg.send response.text
+                  return
+                
+
 		
