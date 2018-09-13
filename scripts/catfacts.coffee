@@ -23,4 +23,5 @@ module.exports = (robot) ->
                 	msg.send response.text
                 else
                 	msg.send "Unable to get cat facts right now."
+                  msg.send error
 		
