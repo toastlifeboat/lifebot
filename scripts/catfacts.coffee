@@ -22,6 +22,6 @@ module.exports = (robot) ->
                 if response.success == "true"
                 	msg.send response.text
                 else
-                	msg.send "Unable to get cat facts right now."
+                  msg.send "Unable to get cat facts right now."
                   msg.send error
 		
