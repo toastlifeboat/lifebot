@@ -14,7 +14,7 @@
 #   scottmeyer
 
 module.exports = (robot) ->
-	robot.respond /CATFACT$/i, (msg) ->
+	robot.hear /CATFACT$/i, (msg) ->
 		msg.http('http://cat-fact.herokuapp.com/facts/random?amount=1')
             .get() (err, response, body) ->
                 # passes back the complete reponse
