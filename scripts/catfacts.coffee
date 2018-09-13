@@ -20,8 +20,8 @@ module.exports = (robot) ->
                 # passes back the complete reponse
                 response = JSON.parse(body)
                 if response.success == "true"
-                	msg.send response.text
+                  msg.send response.text
                 else
-                  msg.send "Unable to get cat facts right now."
+#                  msg.send "Unable to get cat facts right now."
                   msg.send error
 		
