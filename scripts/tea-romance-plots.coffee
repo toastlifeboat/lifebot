@@ -46,8 +46,26 @@ module.exports = (robot) ->
       'A woman disguised as her seafaring brother',
       'A werewolf with a penchant for geocaching',
       'The Star of the aerial acrobatics show',
+      'A master swordswoman seeking an apprentice',
+      'The polyamorous wife of a hibernating bear shifter',
+      'A bride who\'s just been left at the altar',
+      'The next up and coming rodeo champion of Wyoming',
+      'A Duke who is rich in land but not in love',
+      'The anonymous author of a series of scandalous novels',
+      'A reclusive bonsai artist',
+      'A woman disguised as her seafaring brother',
+      'The owner of an Instagram-famous cat',
+      'The last remaining High Priest of an ancient god',
+      'An artist whose work routinely shocks critics and museum-goers alike',
+      'A caterer who always blends into the background at fancy events',
+      'A truck driver who looks just like his famous cousin',
+      'A musician couple seeking a third member of their band ... and their marriage',
+      'A highbrow playwright enamored only with their own wit',
+      'A celebrity chef whose latest restaurant opening was a literal disaster',
+      'A dental student who moonlights as an artists\' model',
+      'A nomadic warrior who has ventured to the city to seek his bride',
+      'A cryptographer who\'s been receiving encoded anonymous love notes',
       'A con artist with a heart of some metal that is definitely not gold'
-
     ]
 
     secondPerson = [
@@ -90,6 +108,20 @@ module.exports = (robot) ->
       'a kindhearted country veterinarian',
       'hipster barista who\'s allergic to coffee',
       'violet eyed raven haired aristocratic alien',
+      'THRAEZEON, SKULLPRINCE OF THE DARKWASTES',
+      'a noble lady in disguise as a peasant boy',
+      'an octogenarian who just wants to tend his herb garden',
+      'Karen from accounting',
+      'a fashion designer whose latest show tragically flopped',
+      'a librarian who rolls their eyes at the \'sexy librarian\' trope',
+      'an eldest daughter who refuses every man her parents want her to marry',
+      'the runner up in a local beauty pageant',
+      'a vicar trying to arrange the village garden party',
+      'a vicar who is a little hot under the collar',
+      'a vicar unsuccessfully ministering to ladies of the night',
+      'a jeweler with a unique talent for matching the stone to the customer',
+      'a firefighter who wears less shirts than your average firefighter',
+      'a firefighter who\'s frequently -- and flagrantly -- shirtless',
       'a pirate who sets their beard on fire to intimidate their foes'
     ]
 
@@ -154,6 +186,17 @@ module.exports = (robot) ->
       'butt heads while investigating a murder in a small town',
       'are being interrogated for crimes they didn’t commit', 
       'are trapped in a miles-long check-out queue',
+      'are each other\'s sworn enemies',
+      'are, unbeknownst to each other, entering their third year of anonymous correspondence',
+      'have known each other since childhood, but only admit their feelings years later',
+      'disguise themselves as royalty to attend a ball',
+      'must share the jackpot after playing the same lottery numbers',
+      'can\'t believe they\'ve just run into one another AGAIN',
+      'seek one another\'s fashion advice',
+      'inspire one another in their Afrofuturist writers\' group',
+      'enter an arms race of increasingly complicated coffee orders',
+      'strongly disagree in their book club but get along just fine under the sheets',
+      'finally take one another\'s masks off',
       'Are charged with guarding a hidden city of dragons'
     ]
 
