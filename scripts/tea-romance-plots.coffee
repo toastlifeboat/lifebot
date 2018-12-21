@@ -65,7 +65,10 @@ module.exports = (robot) ->
       'A dental student who moonlights as an artists\' model',
       'A nomadic warrior who has ventured to the city to seek his bride',
       'A cryptographer who\'s been receiving encoded anonymous love notes',
-      'A con artist with a heart of some metal that is definitely not gold'
+      'A con artist with a heart of some metal that is definitely not gold',
+      'A humble civil servant with big plans for their retirement years',
+      'The highly competent secretary of a greedy oil baron',
+      'A true crime journalist'
     ]
 
     secondPerson = [
@@ -197,12 +200,31 @@ module.exports = (robot) ->
       'enter an arms race of increasingly complicated coffee orders',
       'strongly disagree in their book club but get along just fine under the sheets',
       'finally take one another\'s masks off',
-      'Are charged with guarding a hidden city of dragons'
+      'are charged with guarding a hidden city of dragons',
+      'are pursuing the same mysterious Questing Beast',
+      'accidentally take each other\'s jackets from the coat check',
+      'find themselves on opposing sides in a medieval battle reenactment',
+      'are attempting to edit the same Google doc',
+      'each claim to be the owner of the only umbrella left in the library umbrella rack',
+      'are assigned the same archenemy in the supervillain roster',
+      'disagree over some fine semantic point every week at Bible study',
+      'realize they each own part of a mysterious locket',
+      'encounter one another at a meetup for bisexual wizards',
+      'discover they were swapped at birth',
+      'are assigned to the same group project',
+      'disagree on the best method to start a fire without matches',
+      'keep getting each other\'s mail',
+      'try to hide in the same secret passageway',
+      'are trapped in a time loop while undertaking a poorly conceived time travel rescue mission',
+      'are shunted off into a parallel dimension without any shrimp',
+      'must literally herd a dozen cats'
+
     ]
 
     romanceSetting = [
       'in a coffee shop',
       'in a rustic Montana town',
+      'in an opera box',
       'in a remote cabin in the woods',
       'aboard a pirate ship'
       'over the counter at a feminist bookstore',
@@ -253,7 +275,46 @@ module.exports = (robot) ->
       'at a 24-hour diner in Topeka',
       'while on a kayaking adventure trip',
       'in a complex cave system',
-      'while juggling the needs of their many demanding aunts'
+      'while juggling the needs of their many demanding aunts',
+      'aboard a ghost ship cursed to sail the seven seas',
+      'on the monorail over the tiger exhibit at the zoo',
+      'at a posh private university',
+      'in the hedgerows at midsummer',
+      'on the bridge of a warship',
+      'in the middle of a tense and surprisingly loud space battle',
+      'in a quaint British town that’s been hit by a string of themed murders',
+      'while waving to a ship that\'s leaving port',
+      'in a reclusive lord\'s sculpture gallery',
+      'in a rainforest canopy research camp suspended high above the Amazon',
+      'while their colony ship hurtles towards the unknown',
+      'amidst the intrigue of 15th-century Rome',
+      'in an art installation adult bouncy-castle-slash-ball-pit',
+      'while waiting out a thunderstorm in a haystack',
+      'at a quilting bee',
+      'directly in front of a nunnery',
+      'at a wine tasting',
+      'DURING MASS',
+      'at a high-end art auction',
+      'on a tour of an award-winning nuclear power plant secretly based on flawed design principles',
+      'while proctoring the SAT',
+      'at the unveiling of the new wing of the art museum',
+      'while hunting for a mid-century periodical in the high-density rolling stacks',
+      'at the local liquor store 5 minutes before closing',
+      'at the last rest area for 74 miles',
+      'at the tonsillectomy ward',
+      'at a bake sale staffed by unbearably adorable children',
+      'in a twee Alpine fondue chalet',
+      'an a community of socialist merpeople working on sustainable aquaculture techniques for pearl farming',
+      'backstage at La Scala',
+      'in the stands at the Olympic archery quarterfinals',
+      'in the middle of a coronation pageant',
+      'in international waters',
+      'on an airship',
+      'on route 66',
+      'in a dystopian cinnamon roll factory',
+      'while looking for the cryptic creator of an innovative augmented-reality game',
+      'while waiting in long holiday lines at the post office',
+      'on the ice after an Olympic gold medal hockey game'
     ]
 
     whatFollows = [
@@ -288,7 +349,32 @@ module.exports = (robot) ->
       'They gathered together in front of a congregation. Will anyone object to their union?',
       'And then they take their pants off',
       'Will they? They won’t, but what they do instead is delightful....',
-      'Will they finally let their guard down and learn to live...with passion?'
+      'Will they finally let their guard down and learn to live...with passion?',
+      'Will these stopped clocks finally be right together?',
+      'Can they solve for X O X O?',
+      'Can they find their rainbow after the coming storm?',
+      'Can the forces tearing others apart yet bring them together?',
+      'Will music really soothe the savage beast?',
+      'And yes, things get Very Gay.',
+      'There\'s a first time for everything.',
+      'After everything they\'ve been through, can they learn to love, and play piano, again?',
+      'Their hearts say yes, but their nosy aunts say no.',
+      'Will they ever be able to make their two and two add up to four?',
+      'And then there were makeouts.',
+      'Can they overcome the mountains, both literal and metaphorical, that come between them and a lifetime of happiness together?',
+      'Will they overcome their differences to save the town?',
+      'Can they hide their romance from the town gossip?',
+      'Alas, they never imagined what would happen with the werewolf royal summit...',
+      'Can two -- or three -- wrongs really make a right?',
+      'But is it the red wire they need to cut or the blue one?',
+      'Will it be ooh la la, or oh nooo?',
+      'Will they give into their deepest desires, and cuddle all night in comfy pajamas?',
+      'But can their cats learn to share the best spot on the sofa?',
+      'Their investigations collide, but will their hearts?',
+      'Who will be left--and who will be left out?',
+      'What will happen when the gloves come off?',
+      'He isn\'t asking... Until he is.'
+
     ]
 
     robot.hear /toastbot romance/i, (res) ->
