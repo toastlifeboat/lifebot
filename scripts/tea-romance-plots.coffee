@@ -68,7 +68,21 @@ module.exports = (robot) ->
       'A con artist with a heart of some metal that is definitely not gold',
       'A humble civil servant with big plans for their retirement years',
       'The highly competent secretary of a greedy oil baron',
-      'A true crime journalist'
+      'A true crime journalist',
+      'A quilter with a fondness for subtly erotic patterns',
+      'A person wearing a lampshade as a hat',
+      'A lawyer who works for superheroes',
+      'A time traveler from the 1940s',
+      'An architect who specializes in castles',
+      'A former pop star who\'s returned to their hometown to teach high school band',
+      'The anonymous author of a relationship advice column',
+      'The reigning pinball champion of the Sacramento, California bar scene',
+      'A scientist with absolutely no plans to take over the world',
+      'A youngest son with no fortune to speak of',
+      'A concert pianist setting off on their first tour since their divorce',
+      'A church organist',
+      'A young woman researching a scandalous secret deep in her family\'s past',
+      'Two former TV game show rivals'
     ]
 
     secondPerson = [
@@ -125,7 +139,21 @@ module.exports = (robot) ->
       'a jeweler with a unique talent for matching the stone to the customer',
       'a firefighter who wears less shirts than your average firefighter',
       'a firefighter who\'s frequently -- and flagrantly -- shirtless',
-      'a pirate who sets their beard on fire to intimidate their foes'
+      'a pirate who sets their beard on fire to intimidate their foes',
+      'a person who has eaten nothing but baby food for the past 20 years',
+      'a freelance plush toy designer',
+      'the leader of a senior citizen biker gang',
+      'a molecular gastronomy chef',
+      'a civil engineer whose highest levees are built around their heart',
+      'an aspiring world record holder',
+      'a retired professional skateboarder',
+      'that guy at work who owes them $20',
+      'an aquaponic farmer',
+      'a telescope technician at the observatory',
+      'a middle-aged imam trying to stay hip with the kids these days',
+      'a brand manager at a dog clothing manufacturing company',
+      'a barista who is a true artiste in the medium of latte foam',
+      'a geographer seeking the map to their true love\'s heart'
     ]
 
     romanceScenario = [
@@ -310,11 +338,14 @@ module.exports = (robot) ->
       'in the middle of a coronation pageant',
       'in international waters',
       'on an airship',
-      'on route 66',
+      'on Route 66',
       'in a dystopian cinnamon roll factory',
       'while looking for the cryptic creator of an innovative augmented-reality game',
       'while waiting in long holiday lines at the post office',
-      'on the ice after an Olympic gold medal hockey game'
+      'on the ice after an Olympic gold medal hockey game',
+      'at an artisinal olive oil tasting',
+      'at a coworker\'s wedding',
+      'at a tea shoppe'
     ]
 
     whatFollows = [
