@@ -31,6 +31,7 @@ module.exports = (robot) ->
         'May they always go over the data limit on their phone and never be able to figure out what app is the culprit.',
         'May the volume in one of their headphones always be slightly louder than the other.',
         'May their corks always crumble.',
+        'May they never reach inbox zero',
         'May the soles of their feet always itch, especially when they are wearing shoes',
         'May they never find a working pen when one is most needed.',
         'May their favorite show always be cancelled mid-season',
